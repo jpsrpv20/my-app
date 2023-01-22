@@ -5,12 +5,10 @@ import DaveForm from './DaveForm.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Amplify, Auth } from 'aws-amplify';
 import awsconfig from './aws-exports';
-Amplify.configure(awsconfig);
-
+import awsExports from './aws-exports';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
-
-import awsExports from './aws-exports';
+Amplify.configure(awsconfig);
 Amplify.configure(awsExports);
 //import awsExports from './aws-exports';
 //Amplify.configure(awsExports);
