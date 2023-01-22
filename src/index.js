@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import NavigationBar from './NavigationBar.js';
 import DaveForm from './DaveForm.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Amplify } from 'aws-amplify';
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
 
 //const myFirstElement = <h1>Hello React!</h1>;
 
