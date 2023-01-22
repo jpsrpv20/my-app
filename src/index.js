@@ -1,17 +1,65 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import NavigationBar from './NavigationBar.js';
+import DaveForm from './DaveForm.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+//const myFirstElement = <h1>Hello React!</h1>;
+
+/*class Car {
+  constructor(name) {
+    this.brand = name;
+  }
+
+  present() {
+    return 'I have a ' + this.brand;
+  }
+}
+
+class Model extends Car {
+  constructor(name, mod) {
+    super(name);
+    this.model = mod;
+  }  
+  show() {
+      return this.present() + ', it is a ' + this.model
+  }
+}
+
+const mycar = new Model("Ford", "Mustang");
+
+var test = val => "Hello" + val;*/
+
+/*const myElement = (
+  <table>
+    <tr>
+      <th>Name</th>
+    </tr>
+    <tr>
+      <td>John</td>
+    </tr>
+    <tr>
+      <td>Elsa</td>
+    </tr>
+  </table>
+);*/
+
+//function Car(props) {
+//  return <h2>I am a {props.color} Car!</h2>;
+//}
+
+function App() {
+  return(
+    <>
+      <NavigationBar />
+      <DaveForm />
+    </>
+  );
+}
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+//root.render(myFirstElement);
+root.render(<App />);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//ReactDOM.render(myElement, document.getElementById('root'));
